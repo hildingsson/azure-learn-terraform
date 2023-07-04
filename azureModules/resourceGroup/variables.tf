@@ -1,15 +1,15 @@
 variable "azurerm_resourcegroup_location_short" {
-  type = string
+  type    = string
   default = "ne"
 }
 
 variable "azurerm_resourcegroup_environment" {
-  type = string
+  type    = string
   default = "dev"
 }
 
 variable "azurerm_resourcegroup_abbreviation" {
-  type = string
+  type    = string
   default = "rg"
 }
 
@@ -18,6 +18,10 @@ variable "azurerm_resourcegroup_service" {
 }
 
 variable "azurerm_resourcegroup_location" {
-  type = string
+  type    = string
   default = "North Europe"
+}
+
+variable "azurerm_resourcegroup_tags" {
+  type = map(string)
 }
